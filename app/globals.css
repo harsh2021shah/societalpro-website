@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root { --background:#f6f8fb; --foreground:#0f1f3d; --radius:1rem; }
+@theme inline { --color-background:var(--background); --color-foreground:var(--foreground); --font-sans:'Inter', sans-serif; --font-serif:'Source Serif 4', serif; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:#f6f8fb; color:#0f1f3d; font-family:'Inter',sans-serif; }
+h1, h2, h3, h4 { font-family:'Plus Jakarta Sans',sans-serif; }
+button, a { -webkit-tap-highlight-color:transparent; }
+:focus-visible { outline:3px solid #f59e0b; outline-offset:3px; }
+.hero-grid { background: radial-gradient(circle at 78% 18%, rgba(20,184,166,.12), transparent 27%), radial-gradient(circle at 10% 35%, rgba(11,127,112,.08), transparent 25%), #f6f8fb; }
+.text-balance { text-wrap:balance; }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
